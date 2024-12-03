@@ -1,0 +1,193 @@
+
+#main-header {
+    display: flex;          /* Usa flexbox para la disposición */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center;   /* Centra verticalmente los elementos */
+    background-color: #6CCAD0; /* Fondo del encabezado */
+    color: white;          /* Color del texto */
+    padding: 15px;        /* Espaciado interior */
+    position: fixed;      /* Fija el encabezado en la parte superior */
+    top: 0;               /* Posición desde la parte superior /             / Posición desde el lado izquierdo */
+    left: 0;
+    width: 100%;          /* Ancho completo */
+    z-index: 900; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: larger;
+      /* Asegúrate de que esté por encima de otros elementos */
+}
+
+#main-header img {
+    height: 80px; /* Ajusta la altura de la imagen */
+
+}
+
+
+
+nav {
+    display: flex;          /* Usa flexbox para la navegación */
+}
+
+nav a {
+    color: white;          /* Color del texto de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    margin: 40px;       /* Espaciado entre los enlaces */
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(https://img.freepik.com/premium-photo/wooden-car-toys-blue-background-car-toys-background_423236-194.jpg?semt=ais_hybrid);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main {
+    flex: 1; /* Permitir que el main crezca */
+    padding: 20px;
+    text-align: center; /* Centrar el contenido */
+    
+}
+
+.img {
+    box-shadow: 10px rgba(red, green, blue, alpha);
+ }
+ 
+.btn {
+    background-color: #28a745; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+}
+
+footer {
+    background-color:#6CCAD0;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px; /* Espacio entre el contenido y el footer */
+    width: 100%;
+
+}
+
+.comics-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Espacio entre productos */
+    flex-wrap: wrap; /* Permite que los productos se ajusten en varias filas */
+    padding: 20px;
+    width: 100%; /* Permite flexibilidad en el diseño */
+}
+
+.comic {
+    background-color: #0D6EB8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(45%); /* Ajusta el ancho para que haya dos productos por fila */
+    max-width: 400px; /* Limita el tamaño máximo */
+    text-align: center;
+    padding: 15px;
+    
+}
+
+.comic-image{
+    width: 300px;
+    height: 300px;
+}
+
+
+.comic button {
+    padding: 10px 20px;
+    background-color: #4397c1;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.comic button:hover {
+    background-color: #4397c1;
+}
+
+aside {
+    width: 200px;
+    background-color: #6CCAD0;
+    padding: 15px;
+    margin-left: 0;
+    color: white;
+    position: fixed;
+    top: 120px; /* Ajusta según la altura del header */
+    left: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+aside h3 {
+    margin-top: 0;
+}
+
+.img-derecha {
+    margin-left: 600px; /* Ajusta este valor para mover más o menos la imagen */
+}
+
+
+
+
+
+
+.producto, .promocion {
+    display: flex;
+    flex-direction: column; /* Apila contenido verticalmente */
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 300px; /* Define un ancho máximo */
+}
+
+.producto-img {
+    width: 100%; /* La imagen se ajusta al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 10px; /* Espaciado con el texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+}
+
+.producto:hover, .promocion:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.destacados, .promociones {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
+    justify-content: center;
+    gap: 20px; /* Espacio entre los elementos */
+    background-color: rgba(108, 202, 208, 0.9); /* Fondo azul pastel translúcido */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1200px; /* Ancho máximo de las secciones */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.destacados h2, .promociones h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
